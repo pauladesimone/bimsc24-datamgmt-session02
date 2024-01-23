@@ -54,3 +54,7 @@ img {
   border-style: dotted;
   border-width: 1px;
 }
+
+.dynamic-color {
+  color: inherit; /* or specify the default color if needed */
+}
