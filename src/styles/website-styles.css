@@ -1,0 +1,56 @@
+/* styles/website-styles.css */
+
+html {
+  background-color: rgb(59, 59, 59);
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+  width: auto;
+}
+
+#navbar {
+  height: 50px;
+  border-color: red;
+}
+
+#flex {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+#sidebar {
+  width: 30%;
+  border-color: blue;
+}
+
+#main {
+  width: 70%;
+  border-color: green;
+}
+
+#title {
+  width: 70%;
+  float: left;
+}
+
+#logo {
+  width: 30%;
+  height: 100%;
+  float: right;
+  text-align: right;
+}
+
+.container {
+  border-style: dotted;
+  border-width: 1px;
+}
