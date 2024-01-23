@@ -3,7 +3,7 @@
 <template>
   <div>
     <div id="navbar" class="container">
-      <div id="title">Polls attempt of a website</div>
+      <div id="title">Poll's poetic website</div>
       <div id="logo">
         <img src="./assets/cow.jpg" alt="macad cow" />
       </div>
@@ -12,9 +12,11 @@
     <div id="flex">
       <div id="sidebar" class="container">
         <!-- Existing input and buttons -->
-        <input v-model="inputText" class="definition-input" />
+
+        <!-- <input v-model="inputText" class="definition-input" />
         <button @click="doSomething">Submit</button>
-        <button @click="refresh">Reset</button>
+        <button @click="refresh">Reset</button> -->
+
         <button @click="updateText">Recite me a poem</button>
 
         <!-- New input fields and buttons -->
