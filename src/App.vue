@@ -18,11 +18,14 @@
         <button @click="refresh">Reset</button> -->
 
         <button @click="updateText">Recite me a poem</button>
-
+          <br>
         <!-- New input fields and buttons -->
         <input v-model="selector" placeholder="CSS Selector" />
+        <br>
         <input v-model="color" placeholder="Color" />
+          <br>
         <button @click="changeColor">Change Color</button>
+        <button @click="changeColor, updateText"> change both </button>
       </div>
 
       <div id="main" class="container" :style="{ backgroundColor: mainBackgroundColor }">
@@ -74,4 +77,95 @@ function changeColor() {
 }
 </script>
 
-<style src="./styles/website-styles.css" />
+<style>
+/* styles/website-styles.css */
+
+html {
+  background-color: rgb(255, 247, 247);
+  color: rgb(255, 255, 255);
+}
+
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+  width: auto;
+}
+
+#navbar {
+  height: 50px;
+  border-color: red;
+}
+
+#flex {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+#sidebar {
+  width: 30%;
+  border-color: blue;
+}
+
+#main {
+  width: 70%;
+  border-color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#title {
+  width: 70%;
+  float: left;
+  font-size: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#logo {
+  width: 30%;
+  height: 100%;
+  float: right;
+  text-align: right;
+}
+
+.container {
+  border-style: dotted;
+  border-width: 1px;
+}
+
+.dynamic-color {
+  color: inherit; /* or specify the default color if needed */
+}
+
+
+/* button styles */
+
+button {
+    background-color: #b719b7;
+    border: #6fb8ff;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #1E90FF;
+    box-shadow: 3px 3px black;
+  }
+
+
+
+</style>
