@@ -31,6 +31,9 @@ img {
 #sidebar {
   width: 30%;
   border-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #main {

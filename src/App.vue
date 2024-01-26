@@ -5,27 +5,21 @@
     <div id="navbar" class="container">
       <div id="title">Poll's poetic website</div>
       <div id="logo">
-        <img src="./assets/cow.jpg" alt="macad cow" />
+        <img src="./assets/test_img2.png" alt="macad cow" />
       </div>
     </div>
 
     <div id="flex">
       <div id="sidebar" class="container">
         <!-- Existing input and buttons -->
-
-        <!-- <input v-model="inputText" class="definition-input" />
-        <button @click="doSomething">Submit</button>
-        <button @click="refresh">Reset</button> -->
-
-        <button @click="updateText">Recite me a poem</button>
-          <br>
-        <!-- New input fields and buttons -->
-        <input v-model="selector" placeholder="CSS Selector" />
+        
         <br>
-        <input v-model="color" placeholder="Color" />
-          <br>
-        <button @click="changeColor">Change Color</button>
-        <button @click="changeColor, updateText"> change both </button>
+        <!-- New input fields and buttons -->
+      
+        <br>
+        
+        <br>
+        <button @click="changeBoth">Recite me a poem</button>
       </div>
 
       <div id="main" class="container" :style="{ backgroundColor: mainBackgroundColor }">
@@ -73,7 +67,16 @@ function updateText() {
 }
 
 function changeColor() {
-  mainBackgroundColor.value = color.value;
+  // Generate a random color
+  const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+
+  // Assign the random color to mainBackgroundColor
+  mainBackgroundColor.value = randomColor;
+}
+
+function changeBoth() {
+  updateText();
+  changeColor();
 }
 </script>
 
@@ -81,7 +84,7 @@ function changeColor() {
 /* styles/website-styles.css */
 
 html {
-  background-color: rgb(255, 247, 247);
+  background-color: rgb(231, 154, 174);
   color: rgb(255, 255, 255);
 }
 
@@ -111,6 +114,9 @@ img {
 #sidebar {
   width: 30%;
   border-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #main {
@@ -143,29 +149,25 @@ img {
   color: inherit; /* or specify the default color if needed */
 }
 
-
 /* button styles */
 
 button {
-    background-color: #b719b7;
-    border: #6fb8ff;
-    color: black;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 18px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: #1E90FF;
-    box-shadow: 3px 3px black;
-  }
+  background-color: #b719b7;
+  border: #d471b3;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 18px;
+  transition: all 0.3s ease-in-out;
+}
 
-
-
+button:hover {
+  background-color: #ff1ebc;
+  box-shadow: 3px 3px black;
+}
 </style>
