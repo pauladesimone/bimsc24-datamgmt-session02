@@ -1,22 +1,21 @@
 button {
-    background-color: #ffffff;
-    border: #6fb8ff;
-    color: black;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 18px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: #ff1e96;
-    box-shadow: 3px 3px black;
-  }
+  background-color: #ffffff;
+  border: #d471b3;
+  color: black;
+  padding: 65px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%; /* Set border-radius to 50% for a round button */
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff1ebc;
+  box-shadow: 3px 3px black;
+}
 
 
 

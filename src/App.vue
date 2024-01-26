@@ -11,14 +11,7 @@
 
     <div id="flex">
       <div id="sidebar" class="container">
-        <!-- Existing input and buttons -->
         
-        <br>
-        <!-- New input fields and buttons -->
-      
-        <br>
-        
-        <br>
         <button @click="changeBoth">Recite me a poem</button>
       </div>
 
@@ -103,6 +96,8 @@ img {
 
 #navbar {
   height: 50px;
+  background-color: white; /* Change the background color to white */
+  color: black; /* Change the text color to black */
   border-color: red;
 }
 
@@ -117,6 +112,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 #main {
@@ -124,13 +120,27 @@ img {
   border-color: rgb(255, 255, 255);
   font-size: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; /* Adjust the padding for indentation on both sides */
 }
+
+.poem {
+  text-align: center;
+}
+
+
+
 
 #title {
   width: 70%;
   float: left;
   font-size: 30px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  
 }
 
 #logo {
@@ -160,9 +170,8 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
-  border-radius: 18px;
+  border-radius: 50%; /* Set border-radius to 50% for a round button */
   transition: all 0.3s ease-in-out;
 }
 
